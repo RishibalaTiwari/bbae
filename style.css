@@ -1,0 +1,109 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full page background */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #fce4ec; /* Soft pink background */
+    font-family: 'Georgia', serif;
+    background-image: url('https://example.com/love-background.jpg'); /* Beautiful background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Styling the card */
+  .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.2em;
+    padding: 20px;
+    position: relative;
+    animation: cardAnimation 1s ease-out;
+  }
+  
+  /* Card header */
+  .header {
+    font-size: 2.5em;
+    font-family: 'Cursive', sans-serif;
+    color: #d81b60;
+    margin-bottom: 20px;
+  }
+  
+  /* Image container */
+  .image-container {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling the image */
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Main message area */
+  .message {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+  }
+  
+  /* Flirty and cute message */
+  .flirty-message {
+    font-size: 1.3em;
+    color: #880e4f;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  /* Small, heartfelt message */
+  .small-message {
+    font-size: 1.2em;
+    color: #c2185b;
+  }
+  
+  /* Footer message */
+  .footer {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #d81b60;
+    font-weight: bold;
+  }
+  
+  /* Rose decorations (SVG) */
+  .roses {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Animation for card */
+  @keyframes cardAnimation {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
